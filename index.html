@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tootmise koduleht">
+    <meta name="keywords" content="tootmine, tehased, tootmine info">
+    <meta name="author" content="Tootmise Ettevõte">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tootmise Info</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #f8f8f8; padding: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Tootmise Ettevõte</h1>
+    <nav>
+        <a href="#home">Kodu</a> | <a href="#about">Meist</a> | <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <article>
+            <h2>Tootmise Teave</h2>
+            <p>Meie <abbr title="Tootmise Ettevõte">TE</abbr> on pühendunud kvaliteetse tootmise pakkumisele. Oleme tegutsenud juba <mark>25 aastat</mark> ja toodame erinevaid tooteid vastavalt kliendi vajadustele.</p>
+            <figure>
+                <img src="tootmine.jpg" alt="Tootmine" width="600">
+                <figcaption>Tootmine meie tehases</figcaption>
+            </figure>
+            <blockquote cite="https://www.example.com">
+                "Tootmine on edu võti - pühendumine ja kvaliteet on meie prioriteedid."
+            </blockquote>
+            <audio controls>
+                <source src="tootmine_audio.mp3" type="audio/mpeg">
+                Teie brauser ei toeta audiot.
+            </audio>
+        </article>
+    </section>
+
+    <section id="about">
+        <h2>Meist</h2>
+        <p><strong>Tootmise Ettevõte</strong> on tuntud oma kvaliteetse toodangu ja suurepärase teeninduse poolest. Asume Tallinnas ja meil on võimalik pakkuda tootmisteenuseid kõigile klientidele Eestis ja välismaal.</p>
+        <address>
+            Asukoht: Tootmise tänav 12, Tallinn, Eesti<br>
+            Telefon: +372 123 4567<br>
+            E-post: <a href="mailto:info@tootmine.ee">info@tootmine.ee</a>
+        </address>
+    </section>
+
+    <section id="contact">
+        <h2>Võtke meiega ühendust</h2>
+        <form>
+            <fieldset>
+                <legend>Kontaktvorm</legend>
+                <label for="name">Nimi:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">E-post:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Sõnum:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+                <button type="submit">Saada</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <section>
+        <h2>Tootmisprotsess</h2>
+        <canvas id="productionCanvas" width="400" height="200">Teie brauser ei toeta canvase elementi.</canvas>
+        <script>
+            var canvas = document.getElementById("productionCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(50, 50, 100, 100);
+        </script>
+    </section>
+
+    <section>
+        <h2>Tootmise töörühmad</h2>
+        <ul>
+            <li>Töörühm A</li>
+            <li>Töörühm B</li>
+            <li>Töörühm C</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tootmisstatistika</h2>
+        <table>
+            <caption>Tootmise andmed 2023</caption>
+            <colgroup>
+                <col span="1" style="background-color:lightgray">
+                <col span="1" style="background-color:white">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>Kuu</th>
+                <th>Toodetud kogus</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Jaanuar</td>
+                <td>1000 ük</td>
+            </tr>
+            <tr>
+                <td>Veebruar</td>
+                <td>1500 ük</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>Kokku</td>
+                <td>2500 ük</td>
+            </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <details>
+            <summary>Lisainfo tootmise kohta</summary>
+            <p>Meie tootmisvõimalused kasvavad pidevalt, et rahuldada turu vajadusi ja pakkuda parimat kvaliteeti.</p>
+        </details>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Tootmise Ettevõte</p>
+</footer>
+
+<!-- Kommentaar tootmise veebilehe kohta -->
+</body>
+</html>
